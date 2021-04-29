@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Redirect</title>
+    <meta charset="utf-8"/>
+<!--    <meta http-equiv="refresh" content="2;url=reload.html">-->
+    <script type="text/javascript">
+    function redirect() {
+        location.href="https://www.baidu.com"
+    }
+<!--    setTimeout("javascript:window.location.href='reload.html'", 2000);-->
+    setTimeout("javascript:document.getElementById('redirect').click()", 2000);
+    </script>
+</head>
+
+<body>
+<input id="redirect" type="button" value="Redirect" onclick="redirect()"/>
+</body>
+</html>
